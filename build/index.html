@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ru5min</title>
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cd26113552.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600|Roboto:300,300i,400,400i,500,700&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (window.matchMedia("(max-width: 500px)").matches) {
+            document.head.insertAdjacentHTML('afterbegin','<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">');
+        }
+    </script>
+</head>
+<body class="body-page">
+    <a href="#top" class="btn-on-top"><i class="fas fa-chevron-up"></i></a>
+
+
+    <header id="header" class="header">
+        <a name='top'></a>
+        <nav class="header__menu">
+            <ul class="header__list header__list--login">
+                <li class="header__item">
+                    <a href="#rates" class="header__link header__link--red button">Хочу сдать ЕГЭ</a>
+                </li>
+            </ul>
+            <ul class="header__list header__list--mobile mobile">
+                <li class="header__item">
+                    <a href="#method" class="header__link">Почему мы лучше?</a>
+                </li>
+                <li class="header__item">
+                    <a href="#courses" class="header__link">Курсы</a>
+                </li>
+                <li class="header__item">
+                    <a href="#rates" class="header__link">Тарифы</a>
+                </li>
+                <li class="header__item">
+                    <a href="#footer" class="header__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="intro__content">
+            <div class="intro__logo"></div>
+            <div class="intro__text">
+                <h1 class="intro__title title">подготовка к ЕГЭ <br> <span>по русскому языку</span></h1>
+                <p class="intro__subtitle">Онлайн Курсы
+            </div>
+            </p>
+        </div>
+    </section>
+
+    <section  class="method">
+        <!-- <a name='method'></a> -->
+        <!-- <div class="container">
+            <div class="method__wrapper">
+                <div class="method__col">
+                    <ul class="method__list">
+                        <li class="method__item">Без зубрежки</li>
+                        <li class="method__item">Без домашки</li>
+                        <li class="method__item">Когда удобно</li>
+                        <li class="method__item">Где удобно</li>
+                    </ul>
+                </div>
+                <div class="method__col method__col--img"></div>
+                <div class="method__col method__col--last">
+                    <p class="method__descrtiption">
+                        Уникальная методика позволяет успешно подготовиться к экзамену без лишних усилий
+                    </p>
+                    <div class="method__btn-wrapper">
+                        <a href="#" class="method__btn button">Подробнее</a>
+                    </div>
+    
+                </div>
+            </div>
+        </div> -->
+        <div class="method__about about">
+            <div class="about__head">
+                <div class="container container--narrow">
+                    <h2 class="about__main-title">Наши курсы подойдут любому выпускнику</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about__body">
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Особенная методика</h4>
+                                <p class="about__description">позволяет успешно подготовиться к экзамену и получить максимальный балл на ЕГЭ по русскому языку.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="far fa-comment"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Неоднократное повторение</h4>
+                                <p class="about__description">для лучшего понимания и осознания закономерностей, логики материала.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Запоминающаяся анимация</h4>
+                                <p class="about__description">для визуального восприятия и восприятия "на слух"; яркие образы в противопоставление учителю у доски.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">5-минутные ролики</h4>
+                                <p class="about__description">ограниченное время для объяснения теоретического материала не позволяет вниманию рассеиваться.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Четкие Алгоритмы</h4>
+                                <p class="about__description">действий значительно ускоряют процесс выполнения заданий</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="far fa-grin"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Отсутствие домашних заданий</h4>
+                                <p class="about__description">Снижает нагрузку и не занимает дополнительное время.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Хитрости</h4>
+                                <p class="about__description">Для более правильного решения. Отработка материала "здесь и сейчас", чтобы применить знания и закрепить навыки.</p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="about__text">
+                                <h4 class="about__title">Выбирай задание ЕГЭ</h4>
+                                <p class="about__description">Разделение курсов позволяет выбрать задания, вызывающие наибольшие сложности.</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="about__footer">
+                    <div class="container container--narrow-s">
+                        <p class="about__subinfo">Подготовка к экзамену становится приятным занятием!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   <section class="courses"> 
+        <a name='courses'></a>
+        <h2 class="courses__title">Курсы</h2>
+        <div class="container container--blue">
+            <div class="courses__head">
+                <div class="courses__wrapper">
+                    <div class="courses__wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <ul class="courses__list">
+                <li class="courses__item">
+                        <a href="#" class="courses__link">
+                            <img src="img/course-img1.png" alt="" class="courses__img">
+                            <span class="courses__tasks">8, 11, 12 ,16 ,17 <br> задание ЕГЭ.</span>
+                            <p class="courses__descrcription">
+                                <span>Этот курс</span>
+                                даст вам 10 первичных баллов (24 вторичных), что позволит получить аттестат, даже если вы не умеете писать сочинение.
+                            </p>
+                        </a>
+                </li>
+                <li class="courses__item">
+                        <a href="#" class="courses__link">
+                            <img src="img/course-img2.png" alt="" class="courses__img">
+                            <span class="courses__tasks">9,10, 13, 14, 15 <br> задание ЕГЭ.</span>
+                            <p class="courses__descrcription">
+                                <span>Этот курс</span>
+                                включает в себя большинство заданий по орфографии, что также увеличит баллы за  сочинение за счет отсутствия орфографических ошибок.
+                            </p>
+                        </a>
+                </li>
+                <li class="courses__item">
+                        <a href="#" class="courses__link">
+                            <img src="img/course-img3.png" alt="" class="courses__img">
+                            <span class="courses__tasks">1, 2, 3, 18, 22, 23, 25 <br> задание ЕГЭ.</span>
+                            <p class="courses__descrcription">
+                                <span>Этот курс</span>
+                                научит работать с текстом и объяснит усложненное в последние годы второе задание, а на его основе - восемнадцатое и двадцать пятое.
+                            </p>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </section> 
+ 
+    <section class="rates">
+        <a name="rates"></a>
+        <h2 class="rates__title rates__title--top">тарифы</h2>
+        <div class="container">
+            <div class="rates__col rates__col--big carousel slide" id="carousel-example-generic" data-ride="carousel">
+                <ul class="rates__list carousel-inner" role="listbox">
+                    <li class="rates__item rates__item--pale item active">
+                        <h3 class="rates__title">"База"</h3>
+                        <span class="rates__price">2250 руб.</span>
+                        <p class="rates__description"><span>Любой курс.</span> <br> Оптимальное решение, когда свободного времени почти нет, а баллов не хватает</p>
+                        <h4 class="rates__title rates__title--underline">Купить:</h4>
+
+                        <ul class="rates__links">
+                            <li><a href="#" class="rates__option rates__option--small">Курс "Аттестат за 15 занятий"</a></li>
+                            <li><a href="#" class="rates__option rates__option--small">Курс "Орфография"</a></li>
+                            <li><a href="#" class="rates__option rates__option--small">Курс "Хочу в вуз"</a></li>
+                        </ul>
+                    </li>
+                    <li class="rates__item rates__item--normal item">
+                        <h3 class="rates__title">"Прогресс"</h3>
+                        <span class="rates__price">4000 руб.</span>
+                        <p class="rates__description rates__description--middle"><span>Два курса.</span> <br> Для более высокого результата. Выбор тех, кто в воскресенье планирует отдыхать.</p>
+                        <h4 class="rates__title rates__title--underline">Купить:</h4>
+                        <ul class="rates__links">
+                            <li><a href="#" class="rates__option">Курсы "Аттестат за 15 занятий" + "Орфография"</a></li>
+                            <li><a href="#" class="rates__option">Курсы "Аттестат за 15 занятий" + "Хочу в вуз"</a></li>
+                            <li><a href="#" class="rates__option">Курсы "Хочу в вуз" + "Орфография"</a></li>
+                        </ul>
+                    </li>
+                    <li class="rates__item rates__item--bright item">
+                        <h3 class="rates__title">"Отвага"</h3>
+                        <span class="rates__price">5250 руб.</span>
+                        <p class="rates__description"><span>Три курса.</span> <br> Значительная скидка для тех, кто готов интенсивно заниматься 13,5 часов в неделю.</p>
+                        <h4 class="rates__title rates__title--underline">Купить:</h4>
+                        <ul class="rates__links">
+                            <li><a href="#" class="rates__option">Курсы "Аттестат за 15 занятий" + "Орфография"  +  "Хочу в вуз"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+               
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a name='footer'></a>
+        <div class="contacts">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="contacts__social social-links">
+                
+                    
+                        <li class="links__item"><a class='social-links__link social-links__link--left' target="_blank" href="https://www.youtube.com/channel/UCALkFHdHlWi5q09SYev5Itw?disable_polymer=true">
+                            <i class="fab fa-youtube"></i>
+                        </a></li>
+                        <li class="links__item"><a class='social-links__link' target="_blank" href="https://instagram.com/ru5minut?igshid=1221aoeowk9s1">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                        <li class="links__item"><a class='social-links__link' target="_blank" href="https://vk.com/ru5min">
+                            <i class="fab fa-vk"></i>
+                        </a></li>
+                        <li class="links__item"><a class='social-links__link' target="_blank" href="https://t.me/ru5min">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a></li>
+                    </ul>
+                    <div class="contacts__address">
+                        <span class="contacts__email">Email:</span>
+                        <address class="contacts__email-value">hello@ru5min.ru</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__subfooter">
+            <span class="footer__copy">© ru5min | 2020</span>
+            <span class="footer__copy footer__copy--dev">developed by Kirill Perepelitsa</span>
+        </div>
+    </footer>
+    
+    <script src="js/swipe.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

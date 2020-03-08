@@ -1,0 +1,224 @@
+// Для импорта в диспетчер подключений: @import './blocks/rates/rates.scss';
+
+
+// Для импорта в диспетчер подключений: @import './blocks/select/select.scss';
+// Для импорта в диспетчер подключений: @import './blocks/select/select.scss';
+
+
+// Для импорта в диспетчер подключений: @import './blocks/select/select.scss';
+a {
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.rates {
+    min-height: 500px;
+    background-color: #d1d1d1;
+    padding: 100px 0;
+
+}
+
+.rates .container {
+    width: 100%;
+    max-width: 1345px;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 500px) {
+        padding: 0;
+    }
+}
+
+.rates__col {
+    width: 100%;
+    @media (max-width: 920px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.rates__list {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 920px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+.rates__item {
+    text-align: center;
+    width: 31.33333%;
+    font-family: "Montserrat";
+    font-size:30px;
+    color: #fff;
+    letter-spacing: 0.09em;
+    font-weight: 300;
+    padding: 40px 40px;
+    position: relative;
+
+    &--pale {
+        background-color: #7092A7;
+        .rates__description {
+            padding: 0 35px;
+
+            @media (max-width: 500px) {
+                padding: 0;
+            }
+        }
+    }
+    &--normal {
+        background-color: #4A7E9C;
+    }
+    &--bright {
+        background-color: #2F6E95;
+        .rates__description {
+            padding: 0 28px;
+
+            @media (max-width: 500px) {
+                padding: 0;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 210px;
+        left: 49px;
+        height: 2px;
+        width: 78%;
+        background-color: rgba(255,255,255,0.5);
+
+        @media (max-width: 500px) {
+            top: 140px;
+            width: 70%;
+        }
+
+    }
+
+    @media (max-width: 920px) {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
+.rates__title {
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &--top {
+        text-align: center;
+        font-family: "Montserrat";
+        font-size:70px;
+        margin: 0;
+        font-weight: 400;
+        color: #005588;
+        margin: 0 0 40px ;
+
+        @media (max-width: 500px) {
+            font-size: 50px;
+        }
+
+    }
+    &--underline {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: rgba(255,255,255,0.5);
+    
+        }
+    }
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+        margin-top: 0;
+
+        &--top {
+            font-size: 50px;
+        }
+    }
+
+}
+.rates__price {}
+.rates__description {
+    margin-top: 65px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 23px;
+    position: relative;
+
+    letter-spacing: 0;
+    padding: 0 20px;
+    span {
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    &--middle {
+        margin-top: 65px;
+
+    }
+    
+    @media (max-width: 500px) {
+        margin-top: 35px;
+        font-size: 17px;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+.rates__btn {}
+
+.rates__content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(209,209,209,0.8);
+}
+.rates__links {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    // text-align: left;
+}
+
+.rates__option {
+
+    display: block;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    &:hover {
+    background-color: #ba1a1a;
+    border-color: #ba1a1a;
+
+    }
+    &--small {
+        padding: 17px 10px;
+    }
+}
+
+
+.carousel-indicators {
+    @media (min-width: 500px) {
+        display: none;
+    }
+}

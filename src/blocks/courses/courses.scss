@@ -1,0 +1,196 @@
+// Для импорта в диспетчер подключений: @import './blocks/courses/courses.scss';
+
+a {
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.courses {
+    // min-height: 800px;
+    background-color: #d1d1d1;
+    color: #005588;
+    position: relative;
+    text-align: center;
+    box-shadow: 7px 5px 20px rgba(0,0,0,0.6);
+    padding: 0 0 50px;
+
+    @media (max-width: 500px) {
+        // padding: 0 0 50px;
+        // margin-right: -15px;
+    }
+}
+
+
+// ====================BLUE-BOX======================
+.courses__head {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    
+    margin-top: -1px;
+}
+
+.courses__wrapper {
+    position: relative;
+    height: 0;
+    border: none;
+    // margin: 0 15px;
+    
+    padding-top: 29%;
+    background-color: #457EA0;
+
+}
+.courses__wrap {
+    background-color: #457EA0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // right: -15px;
+    // left: -15px;
+}
+.courses .container {
+    width: 100%;
+    max-width: 1345px;
+    margin: 0 auto;
+}
+.courses .container--blue {
+    width: 100%;
+    max-width: 10000px;
+    background-color: #457EA0;
+    // margin: 0 15px;
+
+}
+
+
+// ============MAIN-PART======================
+.courses__title {
+    margin: 40px 0  0;
+    padding-top: 30px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    background-color: #457EA0;
+    font-size:60px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    position: relative;
+    color: #ffffff;
+
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
+    @media (max-width: 500px) {
+        // font-size: 40px;
+    }
+}
+
+
+.courses__list {
+    list-style:none;
+    margin: -27% 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    position: relative;
+
+    @media (max-width: 768px) {
+        margin-top: -25%;
+    }
+}
+.courses__item {
+    box-sizing: border-box;
+    width: 32%;
+    background-color: rgba(36, 86, 116, 0.1);
+    border: 2px solid rgba(69,126,160, 0.2);
+    padding: 0 15px;
+    transition: all 0.2s ease-in;
+    transition-delay: 0.05s;
+    overflow: hidden;
+    min-width: 230px;
+    
+    &:hover {
+        background-color: rgba(63, 126, 165, 0.1);
+        box-shadow: 0 0 15px rgba(0,0,0,0.8);
+        border-color:rgba(0,0,0,0.1) ;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        
+
+    }
+
+    @media (max-width: 768px) {
+        width: 47%;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 500px) {
+        width: 95%;
+    }
+
+    
+}
+.courses__item:hover .courses__img {
+    width: 120%;
+    margin-left: -25px;
+    margin-top: -8px;
+}
+.courses__img {
+    width: 114.4%;
+    height: auto;
+    transition: 0.2s ease-in;
+    transition-delay: 0.05s;
+    margin: 0 0 0 -15px;
+    pointer-events: none;
+    
+}
+.courses__col {
+    height: auto;
+}
+.courses__link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.courses__tasks {
+    display: block;
+    margin-top: 50px;
+
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #005588;
+
+    font-size:18px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    pointer-events: none;
+
+    @media (max-width: 920px) {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 10px;
+    }
+
+    
+}
+.courses__descrcription {
+    font-family: "Roboto";
+    text-align: left;
+    color: #005588;
+    pointer-events: none;
+    font-size:23px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+
+    @media (max-width: 920px) {
+        font-size: 16px;
+    }
+}
+.courses__item:nth-child(2) .courses__descrcription {
+    padding: 0 0px;
+}

@@ -1,0 +1,36 @@
+// Для импорта в диспетчер подключений: @import './blocks/body-page/body-page.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+body.lock {
+    overflow: hidden;
+}
+.body-page {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-on-top {
+    font-family: "Font Awesome";
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    opacity: 0.3;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 87vh;
+    z-index: 1000;
+    &:hover {
+        opacity: 1;
+    }
+}
+.btn-on-top i {
+    display: block;
+    margin: 4px 0 0 8px ;
+}

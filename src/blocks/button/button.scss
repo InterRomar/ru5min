@@ -1,0 +1,36 @@
+// Для импорта в диспетчер подключений: @import './blocks/button/button.scss';
+a {
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #ba1a1a;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 18px;
+    border-radius: 25px;
+    text-transform: uppercase;
+
+    &--modal {
+        border: none;
+        padding: 10px 10px;
+        cursor: pointer;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+
+
+        &:hover {
+            background-color: rgb(211, 9, 9);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

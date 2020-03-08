@@ -1,0 +1,95 @@
+// Для импорта в диспетчер подключений: @import './blocks/footer/footer.scss';
+
+
+.footer {
+
+
+}
+.footer__subfooter {
+    height: 30px;
+    background-color: rgb(0, 69, 112);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d1d1d1;
+    font-family: "Roboto";
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    word-spacing: 0.3em;
+
+    @media (max-width: 500px) {
+        padding: 10px 0;
+        flex-direction: column;
+        height: auto;
+
+    }
+    
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.footer__copy {
+    margin-left: 30px;
+
+    @media (max-width: 500px) {
+        margin: 0 0 20px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 130%;
+            left: 0;
+            height: 1px;
+            background-color: rgba(255,255,255, 0.3);
+            width: 100%;
+        }
+    }
+}
+.footer__copy--dev {
+    word-spacing: 0;
+    position: relative;
+    margin-left: 0;
+    margin-right: 30px;
+    &::before {
+        content: '';
+        top: 0;
+        left: -8px;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #d1d1d1;
+
+    }
+    &::after {
+        content: '';
+        top: 0;
+        right: -8px;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #d1d1d1;
+
+    }
+
+    @media (max-width: 500px) {
+        margin: 0;
+
+        &::before {
+            width: 0;
+            height: 0;
+        }
+        &::after {
+            width: 0;
+            height: 0;
+        }
+    }
+}
